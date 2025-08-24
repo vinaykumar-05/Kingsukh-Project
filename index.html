@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>King Sukh Guest House</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- ========== NAVBAR ========== -->
+  <header class="site-header">
+    <nav class="navbar">
+      <a class="logo" href="#home">King Sukh</a>
+      <button class="hamburger" id="hamburger" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav" id="nav">
+        <li><a href="#home" class="nav-link">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#rooms" class="nav-link">Rooms</a></li>
+        <li><a href="#gallery" class="nav-link">Gallery</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- ========== HOME (FULL SCREEN) ========== -->
+  <section id="home" class="section section-hero" data-bg="./assets/header.jpg">
+    <div class="overlay"></div>
+    <div class="container center reveal">
+      <h1 class="title">Welcome to King Sukh Guest House</h1>
+      <p class="subtitle">Nature • Comfort • Hospitality</p>
+      <a href="#rooms" class="btn">Explore Rooms</a>
+    </div>
+  </section>
+
+  <!-- ========== ABOUT (FULL SCREEN) ========== -->
+  <section id="about" class="section section-bg" data-bg="./assets/out.jpg">
+    <div class="overlay"></div>
+    <div class="container reveal">
+      <div class="card glass about-card">
+        <div class="about-media">
+          <img src="./assets/flower.jpg" alt="Warm hospitality at King Sukh Guest House" loading="lazy" />
+        </div>
+        <div class="about-text">
+          <h2>About Us</h2>
+          <p>
+            Discover the warmth of hospitality at King Sukh Guest House. Nestled amidst
+            scenic landscapes and cultural heritage, we blend modern comforts with
+            serene surroundings to craft stays you’ll remember.
+          </p>
+          <ul class="ticks">
+            <li>Spacious & clean rooms</li>
+            <li>Friendly, 24×7 assistance</li>
+            <li>Great connectivity to local attractions</li>
+          </ul>
+          <a href="#contact" class="btn btn-secondary">Contact Us</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== ROOMS (FULL SCREEN) ========== -->
+  <section id="rooms" class="section section-bg" data-bg="./assets/recep.jpg">
+    <div class="overlay"></div>
+    <div class="container reveal">
+      <h2 class="section-title">Our Rooms</h2>
+
+      <div class="grid cards">
+        <!-- Deluxe -->
+        <article class="card room-card">
+          <div class="card-media">
+            <img src="./assets/room1.jpg" alt="Deluxe Room" loading="lazy" />
+          </div>
+          <div class="card-body">
+            <h3>Deluxe Room</h3>
+            <p>Elegant interiors designed for your comfort.</p>
+            <ul class="bullets">
+              <li>King-size bed with premium linens</li>
+              <li>Smart TV & high-speed Wi-Fi</li>
+              <li>Attached bath with hot & cold water</li>
+              <li>Balcony view</li>
+            </ul>
+          </div>
+        </article>
+
+        <!-- Luxury Suite -->
+        <article class="card room-card">
+          <div class="card-media">
+            <img src="./assets/recep.jpg" alt="Luxury Suite" loading="lazy" />
+          </div>
+          <div class="card-body">
+            <h3>Luxury Suite</h3>
+            <p>Spacious suite with refined décor & relaxing ambience.</p>
+            <ul class="bullets">
+              <li>Separate lounge area</li>
+              <li>Complimentary beverages</li>
+              <li>Priority service</li>
+              <li>Balcony with panoramic views</li>
+            </ul>
+          </div>
+        </article>
+
+        <!-- Service Room -->
+        <article class="card room-card">
+          <div class="card-media">
+            <img src="./assets/service.jpg" alt="Service Room" loading="lazy" />
+          </div>
+          <div class="card-body">
+            <h3>Service Room</h3>
+            <p>Best value stay with essential amenities.</p>
+            <ul class="bullets">
+              <li>Comfy bedding</li>
+              <li>Neat & hygienic space</li>
+              <li>Access to basic services</li>
+              <li>High-speed Wi-Fi</li>
+            </ul>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== GALLERY (FULL SCREEN) ========== -->
+  <section id="gallery" class="section section-bg" data-bg="./assets/large.jpg">
+    <div class="overlay"></div>
+    <div class="container reveal">
+      <h2 class="section-title">Gallery</h2>
+
+      <div class="grid gallery-grid" id="galleryGrid">
+        <!-- 7 images used from assets -->
+        <figure class="g-item"><img src="./assets/1.jpg" alt="Resort view 1" loading="lazy" /></figure>
+        <figure class="g-item"><img src="./assets/large.jpg" alt="Resort view large" loading="lazy" /></figure>
+        <figure class="g-item"><img src="./assets/small.jpg" alt="Resort view small" loading="lazy" /></figure>
+        <figure class="g-item"><img src="./assets/baranti.webp" alt="Baranti Lake" loading="lazy" /></figure>
+        <figure class="g-item"><img src="./assets/palash.webp" alt="Palash" loading="lazy" /></figure>
+        <figure class="g-item"><img src="./assets/mithonDam.webp" alt="Mithon Dam" loading="lazy" /></figure>
+        <figure class="g-item"><img src="./assets/ayodhya.webp" alt="Ayodhya Hills" loading="lazy" /></figure>
+      </div>
+    </div>
+
+    <!-- Lightbox -->
+    <div class="lightbox" id="lightbox" aria-hidden="true">
+      <button class="lightbox-close" id="lightboxClose" aria-label="Close">&times;</button>
+      <img id="lightboxImg" alt="Preview" />
+    </div>
+  </section>
+
+  <!-- ========== CONTACT (FULL SCREEN) ========== -->
+  <section id="contact" class="section section-bg" data-bg="./assets/mithonDam.webp">
+    <div class="overlay"></div>
+    <div class="container reveal">
+      <div class="card glass contact-card">
+        <h2>Contact Us</h2>
+        <p class="muted">We’d love to hear from you. Send us a message and we’ll get back shortly.</p>
+        <form id="contactForm" novalidate>
+          <div class="form-row">
+            <input type="text" id="name" placeholder="Your Name" required />
+            <input type="email" id="email" placeholder="Your Email" required />
+          </div>
+          <textarea id="message" rows="5" placeholder="Your Message" required></textarea>
+          <button type="submit" class="btn">Send Message</button>
+        </form>
+        <div class="socials">
+          <a href="#" aria-label="Facebook"><img src="./assets/facebook.png" alt="Facebook" /></a>
+          <a href="#" aria-label="Instagram"><img src="./assets/instagram.png" alt="Instagram" /></a>
+          <a href="#" aria-label="Twitter"><img src="./assets/twitter.png" alt="Twitter" /></a>
+          <a href="#" aria-label="YouTube"><img src="./assets/youtube.png" alt="YouTube" /></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="site-footer">
+    <p>© 2025 King Sukh Guest House • All Rights Reserved</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
